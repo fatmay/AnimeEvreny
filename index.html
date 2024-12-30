@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="layout" href="index2.html">
+    <link rel="layout" href="search indexi.html">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Anime Evreny</title>
+    
+</head>
+
+<body>
+
+ 
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Anime Evreny</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Movies</li>
+                    <li class="menu-list-item">Series</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <iframe src="Howls Moving Castle Theme [Piano Tutorial] (Synthesia)  Fontenele NXT.mp3" loop id="x" allow="autoplay" style="display:none">
+                </iframe> 
+                <audio id="y">
+                
+                  <source src="Howls Moving Castle Theme [Piano Tutorial] (Synthesia)  Fontenele NXT.mp3"  type="audio/mpeg">
+                
+                </audio>
+                
+                <button onclick="play()">on music</button>
+                
+                <button onclick="pause()">off music</button>  
+                 
+                <img class="profile-picture" src="img/Tomioka giyu.jfif" alt="">
+                <div class="profile-text-container">
+                    <span class="profile-text">Profile</span>
+                    <i class="fas fa-caret-down"></i>
+                   
+                    
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar">
+       <!--<i class="left-menu-icon fas fa-search"> -->
+           <a href="searchindexi.html" target="_blank">
+                <button class="left-menu-icon fas fa-search"></button>
+                 </a>
+        </i>
+        <i class="left-menu-icon fas fa-home"></i>
+        <i class="left-menu-icon fas fa-users"></i>
+        <i class="left-menu-icon fas fa-bookmark"></i>
+        <i class="left-menu-icon fas fa-tv"></i>
+        <i class="left-menu-icon fas fa-hourglass-start"></i>
+        <i class="left-menu-icon fas fa-shopping-cart"></i>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/HD\ wallpaper_\ Anime\,\ Your\ Name_.png');">
+                <img class="featured-title" src="img/Mirai Kuriyama.png" alt="">
+                <p class="featured-desc">Anime Evreny'ne Hoş Geldin!</p>
+                <a href="index2.html" target="_blank">
+                <button class="featured-button">KİMİM BEN?</button>
+                 </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/aot.jfif" alt="">
+                            <span class="movie-list-item-title">Attack On Titan</span>
+                            <p class="movie-list-item-desc">
+                               Devler var eren yeager var levi ask adami var rose duvarı yıkılıyo eren  herkesi öldürüyor.
+                                </p>
+                                <a href="https://www.turkanime.co/anime/shingeki-no-kyojin-the-final-season" target="_blank">
+                                  <button class="movie-list-item-button">Watch</button>
+                                </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/demonslayer.jfif" alt="">
+                            <span class="movie-list-item-title">Demon Slayer</span>
+                            <p class="movie-list-item-desc">Nezuko-chan iblise dönüşür abisi Tanjiro onu geri insana dönüştürmeye çalışır Zenitsu kız peşindedir.</p>
+                            <a href="https://www.turkanime.co/anime/kimetsu-no-yaiba-yuukaku-hen" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/violet.jfif" alt="">
+                            <span class="movie-list-item-title">Violet Evergarden</span>
+                            <p class="movie-list-item-desc">Violet kimsesiz savaşçıdır Gilbert komutanıdır ve aşıklardır. Gilbert ölür Violet için sadece hüzün.Gilbert canlanır wow</p>
+                            <a href="https://www.turkanime.co/anime/violet-evergarden" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                            </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/bnha.jfif" alt="">
+                            <span class="movie-list-item-title">Boku no Hero Academia</span>
+                            <p class="movie-list-item-desc">Deku-kun All Mighto olmaya çalışırken havale geçiren Bakugou'yu kurtarır.
+                                Bu esnada Todoroki_kun varoluşsal sancılar çeker.</p>
+                                <a href="https://www.turkanime.co/anime/boku-no-hero-academia-2nd-season" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/neon.jfif" alt="">
+                            <span class="movie-list-item-title">Neon genesis evangelion </span>
+                            <p class="movie-list-item-desc">Kira ölüm defteriyle kötüleri öldürür ve onu tek arkadası olarak gören L'yi de uçmağa gönderir.</p>
+                            <a href="https://www.turkanime.co/anime/neon-genesis-evangelion" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/angel.jfif" alt="">
+                            <span class="movie-list-item-title">Angel of Death</span>
+                            <p class="movie-list-item-desc">kız var erkek öldürmeye çalışmıyor kkız beni öldür diyor</p>
+                            <a href="https://turkanime.info/satsuriku-no-tenshi" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Relife.jfif" alt="">
+                            <span class="movie-list-item-title">ReLife</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/relife" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/jujutsu.jfif" alt="">
+                            <span class="movie-list-item-title">Jujutsu Kaisen</span>
+                            <p class="movie-list-item-desc">Naruto çakması.</p>
+                            <a href="https://www.turkanime.co/anime/majo-no-takkyuubin" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Kiznaiver.jfif" alt="">
+                            <span class="movie-list-item-title">Kiznaiver</span>
+                            <p class="movie-list-item-desc">Aşk ve acı üçgeni gerçekten acı</p>
+                            <a href="https://www.turkanime.co/anime/majo-no-takkyuubin" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/noragami.jfif" alt="">
+                            <span class="movie-list-item-title">Noragami</span>
+                            <p class="movie-list-item-desc">Gami japonca tanrı demektir ve tanrıların savaştığı evren.</p>
+                            <a href="https://www.turkanime.co/anime/majo-no-takkyuubin" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/terror.jfif" alt="">
+                            <span class="movie-list-item-title">Tokyo'da Terror</span>
+                            <p class="movie-list-item-desc">3 arakdas terör estiriyor</p>
+                            <a href="https://www.turkanime.co/anime/majo-no-takkyuubin" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/silent.jfif" alt="">
+                            <span class="movie-list-item-title">Silent Voice</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/video/koe-no-katachi" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/erased.png" alt="">
+                            <span class="movie-list-item-title">Erased</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/boku-dake-ga-inai-machi" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/spyx.jfif" alt="">
+                            <span class="movie-list-item-title">Spy x Family</span>
+                            <p class="movie-list-item-desc">başrolü yakisikli abimiz ajandır ve ajan bir kadinla mecburen yuva kurar ama habersiz bir ajanlıktır</p>
+                            <a href="https://www.turkanime.co/anime/spy-x-family" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/ERASED\ Wallpaper\ and\ Background\ Image\ _\ 1920x1006.jfif');">
+                <img class="featured-title" src="img/erased.png" alt="">
+                <p class="featured-desc">izlediğim en iyi animelerden.</p>
+                <a href="https://www.turkanime.co/anime/boku-dake-ga-inai-machi" target="_blank">
+                <button class="featured-button">WATCH</button>
+            </a>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/angel.jfif" alt="">
+                            <span class="movie-list-item-title">Angels of Death</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/majo-no-takkyuubin" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                                </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/atesb.jfif" alt="">
+                            <span class="movie-list-item-title">Grave of the Fireflies </span>
+                            <p class="movie-list-item-desc">Setsuko üzümlü kekim.</p>
+                            <a href="https://www.turkanime.co/anime/majo-no-takkyuubin" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Charlotte.jfif" alt="">
+                            <span class="movie-list-item-title">Charlotte</span>
+                            <p class="movie-list-item-desc">doğaüstü güçler ve bir kahraman:Tek gözlü azrailin peşindeler
+                            </p>
+                            <a href="https://www.turkanime.co/anime/charlotte" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/garden.jfif" alt="">
+                            <span class="movie-list-item-title">The Garden of Words</span>
+                            <p class="movie-list-item-desc">grafikleri aşırı hoş kısa movie.</p>
+                            <a href="https://www.turkanime.co/anime/majo-no-takkyuubin" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ghoul.jfif" alt="">
+                            <span class="movie-list-item-title">Tokyo Ghoul</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/tokyo-ghoul" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/high.jfif" alt="">
+                            <span class="movie-list-item-title">My Neighbor Totoro</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/tonari-no-totoro" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/howls.jfif" alt="">
+                            <span class="movie-list-item-title">Howl's Moving Castle</span>
+                            <p class="movie-list-item-desc">Hayatımda hep bir parçasının olduğunu düşündüğüm hayoa miyazaki animlerinden.</p>
+                            <a href="https://www.turkanime.co/anime/majo-no-takkyuubin" target="_blank">
+                            <button class="movie-list-item-button">Watch</button>
+                        </a>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/kiki.jfif" alt="">
+                            <span class="movie-list-item-title">Kiki's Delivery Service</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/majo-no-takkyuubin" target="_blank">
+                                   <button class="movie-list-item-button">Watch</button>
+                                 </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/Kiznaiver.jfif" alt="">
+                            <span class="movie-list-item-title">Kiznaiver</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/kiznaiver" target="_blank">
+                                  <button class="movie-list-item-button">Watch</button>
+                                </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/kuriyama.jfif" alt="">
+                            <span class="movie-list-item-title">Kyoukai No Kanata</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                               <a href="https://www.turkanime.co/anime/kyoukai-no-kanata" target="_blank">
+                                  <button class="movie-list-item-button">Watch</button>
+                               </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/onepunch.jfif" alt="">
+                            <span class="movie-list-item-title">One Punch Man</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/one-punch-man" target="_blank">
+                                  <button class="movie-list-item-button">Watch</button>
+                                </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/tokyorev.jfif" alt="">
+                            <span class="movie-list-item-title">Tokyo Revengers</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/tokyo-revengers" target="_blank">
+                                    <button class="movie-list-item-button">Watch</button>
+                                </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/violet.jfif" alt="">
+                            <span class="movie-list-item-title">Violet Evergarden</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/violet-evergarden" target="_blank">
+                                <button class="movie-list-item-button">Watch</button>
+                                </a>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/your.jfif" alt="">
+                            <span class="movie-list-item-title">Your Name</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                                <a href="https://www.turkanime.co/anime/kimi-no-na-wa" target="_blank">
+                                    <button class="movie-list-item-button">Watch</button>
+                                </a>
+                           
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+/*müzik*/
+function play() {
+    y.play();
+ }
+
+ function pause() {
+
+   x.setAttribute("src", "");
+    y.pause();
+ }  
+ 
+/*arrow*/
+     const arrows = document.querySelectorAll(".arrow");
+const movieLists = document.querySelectorAll(".movie-list");
+
+arrows.forEach((arrow, i) => {
+const itemNumber = movieLists[i].querySelectorAll("img").length;
+let clickCounter = 0;
+arrow.addEventListener("click", () => {
+ const ratio = Math.floor(window.innerWidth / 270);
+ clickCounter++;
+ if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
+   movieLists[i].style.transform = `translateX(${
+     movieLists[i].computedStyleMap().get("transform")[0].x.value - 300
+   }px)`;
+ } else {
+   movieLists[i].style.transform = "translateX(0)";
+   clickCounter = 0;
+ }
+});
+
+
+/*gece modu geçişler*/
+console.log(Math.floor(window.innerWidth / 270));
+});
+
+const ball = document.querySelector(".toggle-ball");
+const items = document.querySelectorAll(
+".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle"
+);
+
+ball.addEventListener("click", () => {
+items.forEach((item) => {
+ item.classList.toggle("active");
+});
+ball.classList.toggle("active");
+});
+
+
+    </script>
+</body>
+
+</html>

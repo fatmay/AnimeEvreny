@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <link rel="stylesheet" href="style3.css">
+<title>Search</title>
+</head>
+<body>
+<section class="search">
+   
+    <input type="text" id="input" placeholder="Search an anime">
+    <input type="button" id="button" value="Search"/>
+   
+       </section>
+       <section class="display"></section>
+       <input type="next" class="next" readonly="true" value="Next"/>
+       <input type="next" class="prev" readonly="true" value="Prev"/>
+  
+
+       <script>
+
+    
+
+        /*search yeri*/
+        let key="cc782bbe";
+        const input=document.querySelector("#input");
+        const button=document.querySelector("#button");
+        const next=document.querySelector(".next");
+        const prev=document.querySelector(".prev");
+        
+        let value="";
+        let page=1;
+        
+        input.addEventListener("input",(e)=> {
+        
+        e.preventDefault();
+        value=input.value;
+        
+        
+        
+        });
+        
+        button.addEventListener("click",()=>{
+        
+        page=1;
+        getmovie(value,page);
+        });
+        
+        async function getmovie(value,page)
+        {
+            if(value=== "") return ;
+            const data=await fetch(`http://wwww.omdbapi.com/?apikey=${key}&s=${value}&page=${page}`
+            );
+        
+            document.querySelector(".display").innerHTML="";
+            const result=await data.json();
+        //console.log(data);
+        result.Search.forEach((item) => {
+        
+            let moviediv=document.createElement("div");
+            moviediv.classList.add("movie");
+            let poster=document.createElement("div");
+            poster.classList.add("poster");
+            let img=document.createElement("img");
+            img.src=`${item.Poster}`==="N/A" ? (img.src="./img/noimage.png"):`${item.Poster}`;
+            poster.appendChild(img);
+            moviediv.appendChild(poster);
+        
+            let description=document.createElement("div");
+            description.classList.add("descrription");
+            description.innerHTML=`Title:${item.Title} <br> <br> Year:${item.Year}<br> <br> <a href=https://www.imdb.com/title/${item.imdbID} > IMDB:https://www.imdb.com/title/${item.imdbID} </a>`;
+            moviediv.appendChild(description);
+        
+            document.querySelector(".display").appendChild(moviediv);
+            
+        });
+        next.classList.add("visible");
+            prev.classList.add("visible");
+        }
+        next.addEventListener("click",()=>{
+            if(value=== "")return;
+            page++;
+            getmovie(value,page);
+        
+        });
+        prev.addEventListener("click",()=>{
+            if(value=== "")return;
+            if(page===1) return;
+            page--;
+            getmovie(value,page);
+        
+        });
+        </script>
+
+    </body>
+
+</html>
+
